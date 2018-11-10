@@ -8,6 +8,7 @@ public class task_9 {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Введите значение table[" + i + "][" + j + "]");
                 table[i][j] = scanner.nextInt();
+                scanner.close();
             }
 
         }
