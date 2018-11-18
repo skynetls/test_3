@@ -5,7 +5,7 @@ public class task_8 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Задайте размер массива: ");
         int x = scanner.nextInt();
-        int mas[] = new int[x];
+        int [] mas = new int[x];
         for (int i = 0; i < x; i++) {
             System.out.println("Введите значение mas[" + i + "]");
             mas[i] = scanner.nextInt();
