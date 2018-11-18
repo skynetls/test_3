@@ -2,13 +2,17 @@ import java.util.Scanner;
 
 public class task_8 {
     public static void main(String[] args) {
-        int mas[] = new int[5];
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 5; i++) {
+        System.out.print("Задайте размер массива: ");
+        int x = scanner.nextInt();
+        int mas[] = new int[x];
+        for (int i = 0; i < x; i++) {
             System.out.println("Введите значение mas[" + i + "]");
             mas[i] = scanner.nextInt();
         }
-        System.out.println("Значение mas[] * 2: "+ mas [0]*2 +", "+ mas [1]*2 +", "+ mas [2]*2 +", "+ mas [3]*2 +", "+ mas [4]*2);
+        for (int j = 0; j < x; j++) {
+            System.out.println("mas[" + j + "] * 2 = " + mas [j] * 2);
+        }
 
         scanner.close();
     }
